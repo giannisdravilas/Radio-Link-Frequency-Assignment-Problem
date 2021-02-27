@@ -6,7 +6,7 @@ class Parsing(csp.CSP):
     def __init__(self, file_name):
         # Read the variables and domain indexes of the CSP
         variables_domain = []
-        f = open("var"+file_name, "r")
+        f = open("instances/var"+file_name, "r")
         # Ignore the first line which is the amount of the records that follow
         first_line = f.readline()
         for line in f:
@@ -23,7 +23,7 @@ class Parsing(csp.CSP):
 
         # Read the domain indexes and their values
         domains_values = []
-        f = open("dom" + file_name, "r")
+        f = open("instances/dom" + file_name, "r")
         # Ignore the first line which is the amount of the records that follow
         first_line = f.readline()
         for line in f:
@@ -52,7 +52,7 @@ class Parsing(csp.CSP):
         self.constraints_splitted = []
         self.weights = {}
         # Read the constraints of the CSP
-        f = open("ctr" + file_name, "r")
+        f = open("instances/ctr" + file_name, "r")
         # Ignore the first line which is the amount of the records that follow
         first_line = f.readline()
         for line in f:
