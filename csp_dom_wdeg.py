@@ -191,7 +191,7 @@ def AC3(csp, queue=None, removals=None, arc_heuristic=dom_j_up):
         revised, checks, constraint_applied = revise(csp, Xi, Xj, removals, checks)
         if revised:
             if not csp.curr_domains[Xi]:
-                csp.update_weights(constraint_applied) #update the weight fo the constraint for the dom/wdeg heuristic
+                csp.update_weights(constraint_applied) #update the weight of the constraint for the dom/wdeg heuristic
                 return False, checks  # CSP is inconsistent
             for Xk in csp.neighbors[Xi]:
                 if Xk != Xj:
