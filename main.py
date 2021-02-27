@@ -2,6 +2,7 @@ import RLFA
 import csp_dom_wdeg as csp
 import time
 
+
 if __name__ == '__main__':
 
     # For each instance, read the data and run the backtracking search with FC and MAC-AC3,
