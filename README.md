@@ -35,6 +35,6 @@ An experimental comparison was made using the 12 inferences provided above. Duri
 In general, MAC-AC3 algorithm does pretty well, with the worst average time being around 2 and a half minutes.<br>
 FC algorithm needs on average more time to solve the problems, while for some of them the order of magnitude is increased to hours.<br>
 Some deviations are observed due to pseudorandomness used in some functions, such as argmin_random_tie().<br>
-MIN-CONFLICTS algorithm is found to be usuitable for this problem, as it found a solution only for 1 out of the 23 satisfiable problems, and for none of the unsatisfiable problems.
+MIN-CONFLICTS algorithm is found to be unsuitable for this problem, as it found a solution only for 1 out of the 23 satisfiable problems, and for none of the unsatisfiable problems.
 
 The full statistics of the comparison are freely available to anyone interested, after further contact.
