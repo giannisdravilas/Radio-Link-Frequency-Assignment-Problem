@@ -30,7 +30,7 @@ Run with any python3 version, from python3.7 and above, for example:
 
 ### Inferences
 
-An experimental comparison was made using the 12 inferences provided above. During this comparison, FC and MAC-AC3 algorithms used the dom/wdeg heuristic function to choose the next variable each time, while not using a heuristic function to choose the next value. For each instance, 12 executions have been made, 4 for each algorithm and an average has been exported. For the algorithms taking too long to finish, only 1 complete execution has been made, while the other 3 were interrupted after 60 minutes. For the MIN-CONFLICTS algorithm, a maximum steps number was defined to 100000.
+An experimental comparison was made using the 12 inferences provided above. During this comparison, FC and MAC-AC3 algorithms used the dom/wdeg heuristic function to choose the next variable each time, while not using a heuristic function to choose the next value. For each instance, 12 executions have been made, 4 for each algorithm and an average has been exported. For the algorithms taking too long to finish, only 1 complete execution has been made, while the other 3 were interrupted after 60 minutes. For the MIN-CONFLICTS algorithm, the maximum steps were defined to 100000.
 
 In general, MAC-AC3 algorithm does pretty well, with the worst average time being 2 and a half minutes.
 FC algorithm needs on average more time to solve the problems, while for some of them the order of magnitude is increased to hours.
