@@ -12,7 +12,7 @@ The two variables represent two radio links which are "close" one to the other. 
 
 ### Implementation
 
-In RLFA.py, a class Parsing is used to parse the data from the files and initialize the CSP problem. A function check_constraints() is used as a chechking function for the csp module.
+In RLFA.py, a class Parsing is used to parse the data from the files and initialize the CSP problem. A function check_constraints() is used as a checking function for the csp module.
 Each instance to be solved, consists of three files. A file with the prefix var contains the number of total variables of the csp problem in the first line, followed by the variables along with their domain ids. A file with the prefix dom contains the number of total domains of the csp problem in the first line, followed by the domain ids along with the actual domains. A file with the prefix ctr contains the number of total constraints of the csp problem in the first line, followed by the constraints in the format x y > k or x y = k, which means |x-y| > k ή |x-y| = k correspondingly.
 
 The modules csp_dom_wdeg.py, search.py and utils.py contain code from [csp.py provided by AIMA](https://github.com/aimacode/aima-python).
