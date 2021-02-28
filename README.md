@@ -12,7 +12,7 @@ The two variables represent two radio links which are "close" one to the other. 
 
 ### Implementation
 
-In RLFA.py, a class Parsing is used to parse the data from the files and initialize the CSP problem. A function check_constraints() is used as a checking function for the csp module.
+In RLFA.py, a class Parsing is used to parse the data from the files and initialize the CSP problem. A function check_constraints() is used as a checking function for the csp module.\n
 Each instance to be solved, consists of three files. A file with the prefix var contains the number of total variables of the csp problem in the first line, followed by the variables along with their domain ids. A file with the prefix dom contains the number of total domains of the csp problem in the first line, followed by the domain ids along with the actual domains. A file with the prefix ctr contains the number of total constraints of the csp problem in the first line, followed by the constraints in the format x y > k or x y = k, which means |x-y| > k ή |x-y| = k correspondingly.
 
 The modules csp_dom_wdeg.py, search.py and utils.py contain code from [csp.py provided by AIMA](https://github.com/aimacode/aima-python).
@@ -32,9 +32,9 @@ Run with any python3 version, from python3.7 and above, for example:
 
 An experimental comparison was made using the 12 inferences provided above. During this comparison, FC and MAC-AC3 algorithms used the dom/wdeg heuristic function to choose the next variable each time, while not using a heuristic function to choose the next value. For each instance, 12 executions have been made, 4 for each algorithm and an average has been exported. For the algorithms taking too long to finish, only 1 complete execution has been made, while the other 3 were interrupted after 60 minutes. For the MIN-CONFLICTS algorithm, the maximum steps were defined to 100000.
 
-In general, MAC-AC3 algorithm does pretty well, with the worst average time being 2 and a half minutes.
-FC algorithm needs on average more time to solve the problems, while for some of them the order of magnitude is increased to hours.
-Some deviations are observed due to pseudorandomness used in some functions, such as argmin_random_tie().
+In general, MAC-AC3 algorithm does pretty well, with the worst average time being around 2 and a half minutes.\n
+FC algorithm needs on average more time to solve the problems, while for some of them the order of magnitude is increased to hours.\n
+Some deviations are observed due to pseudorandomness used in some functions, such as argmin_random_tie().\n
 MIN-CONFLICTS algorithm is found to be usuitable for this problem, as it found a solution only for 1 out of the 23 satisfiable problems, and for none of the unsatisfiable problems.
 
 The full statistics of the comparison are freely available to anyone interested, after further contact.
